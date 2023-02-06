@@ -16,6 +16,7 @@
 		1C59B8F12991565C00FBE342 /* FloatingPanelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C59B8F02991565C00FBE342 /* FloatingPanelTests.swift */; };
 		1C59B8FB2991565C00FBE342 /* FloatingPanelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C59B8FA2991565C00FBE342 /* FloatingPanelUITests.swift */; };
 		1C59B8FD2991565C00FBE342 /* FloatingPanelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C59B8FC2991565C00FBE342 /* FloatingPanelUITestsLaunchTests.swift */; };
+		1C59B91A29916E0100FBE342 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C59B91929916E0100FBE342 /* RootRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		1C59B8F62991565C00FBE342 /* FloatingPanelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FloatingPanelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C59B8FA2991565C00FBE342 /* FloatingPanelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPanelUITests.swift; sourceTree = "<group>"; };
 		1C59B8FC2991565C00FBE342 /* FloatingPanelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPanelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1C59B91929916E0100FBE342 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RootRouter.swift; path = "../../../../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Core/Utils/Router/RootRouter.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +101,10 @@
 		1C59B8D82991565B00FBE342 /* FloatingPanel */ = {
 			isa = PBXGroup;
 			children = (
-				1C59B8D92991565B00FBE342 /* AppDelegate.swift */,
-				1C59B8DB2991565B00FBE342 /* SceneDelegate.swift */,
-				1C59B8DD2991565B00FBE342 /* ViewController.swift */,
+				1C59B91229916DA700FBE342 /* Core */,
+				1C59B91429916DC300FBE342 /* Modules */,
+				1C59B91529916DCB00FBE342 /* Resources */,
 				1C59B8DF2991565B00FBE342 /* Main.storyboard */,
-				1C59B8E22991565C00FBE342 /* Assets.xcassets */,
-				1C59B8E42991565C00FBE342 /* LaunchScreen.storyboard */,
 				1C59B8E72991565C00FBE342 /* Info.plist */,
 			);
 			path = FloatingPanel;
@@ -125,6 +125,65 @@
 				1C59B8FC2991565C00FBE342 /* FloatingPanelUITestsLaunchTests.swift */,
 			);
 			path = FloatingPanelUITests;
+			sourceTree = "<group>";
+		};
+		1C59B91229916DA700FBE342 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1C59B91629916DE100FBE342 /* App */,
+				1C59B91729916DEC00FBE342 /* Utils */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1C59B91429916DC300FBE342 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1C59B91B29916E7000FBE342 /* Base */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1C59B91529916DCB00FBE342 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1C59B8E42991565C00FBE342 /* LaunchScreen.storyboard */,
+				1C59B8E22991565C00FBE342 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1C59B91629916DE100FBE342 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1C59B8D92991565B00FBE342 /* AppDelegate.swift */,
+				1C59B8DB2991565B00FBE342 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1C59B91729916DEC00FBE342 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1C59B91829916DF300FBE342 /* Router */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1C59B91829916DF300FBE342 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1C59B91929916E0100FBE342 /* RootRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1C59B91B29916E7000FBE342 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1C59B8DD2991565B00FBE342 /* ViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C59B91A29916E0100FBE342 /* RootRouter.swift in Sources */,
 				1C59B8DE2991565B00FBE342 /* ViewController.swift in Sources */,
 				1C59B8DA2991565B00FBE342 /* AppDelegate.swift in Sources */,
 				1C59B8DC2991565B00FBE342 /* SceneDelegate.swift in Sources */,
