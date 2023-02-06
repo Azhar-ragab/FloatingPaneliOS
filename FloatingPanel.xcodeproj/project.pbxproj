@@ -18,6 +18,7 @@
 		1C59B91A29916E0100FBE342 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C59B91929916E0100FBE342 /* RootRouter.swift */; };
 		1C59B92529917C6F00FBE342 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C59B92429917C6F00FBE342 /* BaseViewController.xib */; };
 		1C59B92729917C8B00FBE342 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C59B92629917C8B00FBE342 /* Colors.xcassets */; };
+		1C59B9432991955B00FBE342 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C59B9422991955B00FBE342 /* UIColor+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		1C59B91929916E0100FBE342 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RootRouter.swift; path = "../../../../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Core/Utils/Router/RootRouter.swift"; sourceTree = "<group>"; };
 		1C59B92429917C6F00FBE342 /* BaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
 		1C59B92629917C8B00FBE342 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		1C59B9422991955B00FBE342 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor+Extensions.swift"; path = "../../../../../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Extensions/UIKit/UIColor/UIColor+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		1C59B91229916DA700FBE342 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				1C59B93F299194FC00FBE342 /* Extensions */,
 				1C59B91629916DE100FBE342 /* App */,
 				1C59B91729916DEC00FBE342 /* Utils */,
 			);
@@ -195,6 +198,30 @@
 				1C59B92429917C6F00FBE342 /* BaseViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1C59B93F299194FC00FBE342 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1C59B9402991954000FBE342 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1C59B9402991954000FBE342 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				1C59B9412991954800FBE342 /* UIColor */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		1C59B9412991954800FBE342 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				1C59B9422991955B00FBE342 /* UIColor+Extensions.swift */,
+			);
+			path = UIColor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C59B91A29916E0100FBE342 /* RootRouter.swift in Sources */,
+				1C59B9432991955B00FBE342 /* UIColor+Extensions.swift in Sources */,
 				1C59B8DE2991565B00FBE342 /* BaseViewController.swift in Sources */,
 				1C59B8DA2991565B00FBE342 /* AppDelegate.swift in Sources */,
 				1C59B8DC2991565B00FBE342 /* SceneDelegate.swift in Sources */,
