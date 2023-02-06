@@ -8,9 +8,12 @@
 import UIKit
 
 class BaseViewController: UIViewController {
+    
+    @IBOutlet weak var btnShowPanel: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpView()
     }
     
     init() {
@@ -20,6 +23,11 @@ class BaseViewController: UIViewController {
     
     required init?(coder: NSCoder) {
         return nil
+    }
+    
+    func setUpView() {
+        btnShowPanel.layer.cornerRadius = 0.5 * btnShowPanel.bounds.size.width
+        btnShowPanel.clipsToBounds = true
     }
 }
 

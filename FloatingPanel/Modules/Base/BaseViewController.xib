@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseViewController" customModule="FloatingPanel" customModuleProvider="target">
             <connections>
+                <outlet property="btnShowPanel" destination="Eu2-7j-yU2" id="Vgc-bu-3iT"/>
                 <outlet property="view" destination="bIk-Fd-E63" id="0ID-QQ-ai3"/>
             </connections>
         </placeholder>
@@ -24,17 +25,32 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eu2-7j-yU2">
+                    <rect key="frame" x="310" y="730" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Eu2-7j-yU2" secondAttribute="height" multiplier="1:1" id="CAh-9t-RLG"/>
+                        <constraint firstAttribute="width" constant="60" id="mF4-SR-f8R"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" image="info" catalog="system">
+                        <color key="baseForegroundColor" name="purple"/>
+                        <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="bqd-61-70f"/>
             <color key="backgroundColor" name="purple"/>
             <constraints>
+                <constraint firstItem="bqd-61-70f" firstAttribute="trailing" secondItem="Eu2-7j-yU2" secondAttribute="trailing" constant="20" id="1td-90-Z0U"/>
                 <constraint firstItem="zPV-0w-l6y" firstAttribute="centerX" secondItem="bqd-61-70f" secondAttribute="centerX" id="MSw-Ye-fwc"/>
                 <constraint firstItem="zPV-0w-l6y" firstAttribute="centerY" secondItem="bqd-61-70f" secondAttribute="centerY" id="n9N-t7-HZT"/>
+                <constraint firstItem="bqd-61-70f" firstAttribute="bottom" secondItem="Eu2-7j-yU2" secondAttribute="bottom" constant="20" id="qP2-Xr-Fb2"/>
             </constraints>
             <point key="canvasLocation" x="25" y="-584"/>
         </view>
     </objects>
     <resources>
+        <image name="info" catalog="system" width="93" height="128"/>
         <namedColor name="purple">
             <color red="0.73333333333333328" green="0.53333333333333333" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
