@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         window?.makeKeyAndVisible()
-        let vc = DetailsViewController()
+        let vc = BaseViewController()
         RootRouter.presentRootScreen(in: window, vc: vc)
     }
 
