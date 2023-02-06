@@ -14,5 +14,9 @@ class ItemCell: UITableViewCell {
     
     func configure(with item: ItemEntity) {
         itemName.text = item.name
+        itemName.layer.borderWidth = 0.8
+        itemName.layer.borderColor = UIColor.lightGray.cgColor
+        itemName.layer.cornerRadius = 8
+
     }
 }

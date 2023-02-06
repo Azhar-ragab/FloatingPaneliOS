@@ -15,17 +15,19 @@
                 <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4Y-T8-pJR">
-                        <rect key="frame" x="172" y="10.666666666666664" width="46" height="23"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4Y-T8-pJR" customClass="UILabelPadding" customModule="FloatingPanel" customModuleProvider="target">
+                        <rect key="frame" x="10" y="10" width="370" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="Q4Y-T8-pJR" firstAttribute="centerY" secondItem="lXF-Qs-Jmx" secondAttribute="centerY" id="iIU-rS-gMm"/>
-                    <constraint firstItem="Q4Y-T8-pJR" firstAttribute="centerX" secondItem="lXF-Qs-Jmx" secondAttribute="centerX" id="vOn-dc-Cgn"/>
+                    <constraint firstAttribute="bottom" secondItem="Q4Y-T8-pJR" secondAttribute="bottom" constant="10" id="g5O-dP-yba"/>
+                    <constraint firstAttribute="trailing" secondItem="Q4Y-T8-pJR" secondAttribute="trailing" constant="10" id="r3A-bn-gLi"/>
+                    <constraint firstItem="Q4Y-T8-pJR" firstAttribute="top" secondItem="lXF-Qs-Jmx" secondAttribute="top" constant="10" id="uKu-ya-uYQ"/>
+                    <constraint firstItem="Q4Y-T8-pJR" firstAttribute="leading" secondItem="lXF-Qs-Jmx" secondAttribute="leading" constant="10" id="utF-Cc-2wi"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -26,6 +26,7 @@
 		1C59B9512991A2A500FBE342 /* ItemEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C59B9502991A2A500FBE342 /* ItemEntity.swift */; };
 		1C59B9532991A33400FBE342 /* DetailsViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C59B9522991A33400FBE342 /* DetailsViewController+TableView.swift */; };
 		1C59B9562991A46D00FBE342 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C59B9552991A46D00FBE342 /* UITableView+Extensions.swift */; };
+		1C7182BD2991B50500EB2E2A /* UILabelPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7182BC2991B50500EB2E2A /* UILabelPadding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		1C59B9502991A2A500FBE342 /* ItemEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemEntity.swift; sourceTree = "<group>"; };
 		1C59B9522991A33400FBE342 /* DetailsViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailsViewController+TableView.swift"; sourceTree = "<group>"; };
 		1C59B9552991A46D00FBE342 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		1C7182BC2991B50500EB2E2A /* UILabelPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelPadding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 		1C59B91729916DEC00FBE342 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1C7182BA2991B4DE00EB2E2A /* ReusableViews */,
 				1C59B91829916DF300FBE342 /* Router */,
 			);
 			path = Utils;
@@ -283,6 +286,22 @@
 				1C59B9552991A46D00FBE342 /* UITableView+Extensions.swift */,
 			);
 			path = UITableView;
+			sourceTree = "<group>";
+		};
+		1C7182BA2991B4DE00EB2E2A /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				1C7182BB2991B4F700EB2E2A /* UILabel */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		1C7182BB2991B4F700EB2E2A /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				1C7182BC2991B50500EB2E2A /* UILabelPadding.swift */,
+			);
+			path = UILabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,6 +443,7 @@
 				1C59B8DE2991565B00FBE342 /* BaseViewController.swift in Sources */,
 				1C59B947299196AA00FBE342 /* DetailsViewController.swift in Sources */,
 				1C59B9512991A2A500FBE342 /* ItemEntity.swift in Sources */,
+				1C7182BD2991B50500EB2E2A /* UILabelPadding.swift in Sources */,
 				1C59B9562991A46D00FBE342 /* UITableView+Extensions.swift in Sources */,
 				1C59B94C29919CD100FBE342 /* ItemCell.swift in Sources */,
 				1C59B9532991A33400FBE342 /* DetailsViewController+TableView.swift in Sources */,

@@ -17,7 +17,7 @@ class DetailsViewController: UIViewController {
     func getItemList() -> [ItemEntity] {
         var itemList: [ItemEntity] = []
         for i in 0...15 {
-            let item = ItemEntity(name: "Executions: Total number of executions of the statement.Executions: Total number of executions of the statement.Executions \(i)")
+            let item = ItemEntity(name: "Executions: Total number of executions of the statement.Executions:\(i)")
             itemList.insert(item, at: 0)
         }
         return itemList
@@ -41,6 +41,9 @@ class DetailsViewController: UIViewController {
     func setUpView() {
         animatableView.layer.cornerRadius = 10
         animatableView.clipsToBounds = true
+    }
+    
+    @IBAction func exit(_ sender: Any) {
     }
 }
 

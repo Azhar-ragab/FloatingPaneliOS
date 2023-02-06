@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -27,6 +28,28 @@
                         <constraint firstAttribute="width" constant="80" id="n9u-c3-qor"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgt-QW-pWW">
+                    <rect key="frame" x="353" y="47" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="wgt-QW-pWW" secondAttribute="height" multiplier="1:1" id="MRs-NC-tI7"/>
+                        <constraint firstAttribute="width" constant="25" id="SUd-UO-uoX"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled">
+                        <imageReference key="image" image="x.circle.fill" catalog="system" renderingMode="hierarchical">
+                            <hierarchicalColors>
+                                <color red="0.40537173539092863" green="0.40537173539092863" blue="0.40537173539092863" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color name="LightGray"/>
+                                <color name="LightGray"/>
+                            </hierarchicalColors>
+                        </imageReference>
+                        <color key="baseForegroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="exit:" destination="-1" eventType="touchUpInside" id="bDJ-kC-LUg"/>
+                    </connections>
+                </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trace Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAw-6j-owP">
                     <rect key="frame" x="0.0" y="65" width="390" height="23"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
@@ -47,7 +70,9 @@
             <color key="backgroundColor" name="Background"/>
             <constraints>
                 <constraint firstItem="Z8B-ZF-5pj" firstAttribute="top" secondItem="UAw-6j-owP" secondAttribute="bottom" constant="10" id="3KU-Od-zEz"/>
+                <constraint firstItem="wgt-QW-pWW" firstAttribute="top" secondItem="H6u-9f-0av" secondAttribute="top" id="7Sr-ec-xm1"/>
                 <constraint firstItem="H6u-9f-0av" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="B8T-GD-dhC"/>
+                <constraint firstItem="wgt-QW-pWW" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-12" id="CEk-jB-SB6"/>
                 <constraint firstItem="UAw-6j-owP" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="FJs-u3-K1R"/>
                 <constraint firstItem="Z8B-ZF-5pj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Jmp-X2-0eL"/>
                 <constraint firstItem="Z8B-ZF-5pj" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="U1f-hd-vQg"/>
@@ -60,6 +85,7 @@
         </view>
     </objects>
     <resources>
+        <image name="x.circle.fill" catalog="system" width="128" height="123"/>
         <namedColor name="Background">
             <color red="0.94901960784313721" green="0.95686274509803926" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -13,16 +13,13 @@ extension DetailsViewController: UITableViewDelegate,
    
     func setupTableView() {
         tableView.registerCellNib(cellClass: ItemCell.self)
-        tableView.estimatedRowHeight = 90
-        tableView.estimatedSectionHeaderHeight = 0
-        tableView.estimatedSectionFooterHeight = 0
         tableView.delegate = self
         tableView.dataSource = self
     }
   
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 90
+        return 70
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
