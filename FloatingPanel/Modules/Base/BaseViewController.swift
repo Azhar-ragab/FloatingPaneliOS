@@ -11,10 +11,15 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        view.backgroundColor = .cyan
     }
-
-
+    
+    init() {
+        super.init(nibName: String(describing: Self.self),
+                   bundle: .init(for: Self.self))
+    }
+    
+    required init?(coder: NSCoder) {
+        return nil
+    }
 }
 

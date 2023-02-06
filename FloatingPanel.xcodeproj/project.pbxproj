@@ -16,6 +16,8 @@
 		1C59B8FB2991565C00FBE342 /* FloatingPanelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C59B8FA2991565C00FBE342 /* FloatingPanelUITests.swift */; };
 		1C59B8FD2991565C00FBE342 /* FloatingPanelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C59B8FC2991565C00FBE342 /* FloatingPanelUITestsLaunchTests.swift */; };
 		1C59B91A29916E0100FBE342 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C59B91929916E0100FBE342 /* RootRouter.swift */; };
+		1C59B92529917C6F00FBE342 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C59B92429917C6F00FBE342 /* BaseViewController.xib */; };
+		1C59B92729917C8B00FBE342 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C59B92629917C8B00FBE342 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		1C59B8FA2991565C00FBE342 /* FloatingPanelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPanelUITests.swift; sourceTree = "<group>"; };
 		1C59B8FC2991565C00FBE342 /* FloatingPanelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPanelUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1C59B91929916E0100FBE342 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RootRouter.swift; path = "../../../../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Core/Utils/Router/RootRouter.swift"; sourceTree = "<group>"; };
+		1C59B92429917C6F00FBE342 /* BaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
+		1C59B92629917C8B00FBE342 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,7 @@
 			children = (
 				1C59B8E42991565C00FBE342 /* LaunchScreen.storyboard */,
 				1C59B8E22991565C00FBE342 /* Assets.xcassets */,
+				1C59B92629917C8B00FBE342 /* Colors.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				1C59B8DD2991565B00FBE342 /* BaseViewController.swift */,
+				1C59B92429917C6F00FBE342 /* BaseViewController.xib */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -287,6 +293,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C59B92529917C6F00FBE342 /* BaseViewController.xib in Resources */,
+				1C59B92729917C8B00FBE342 /* Colors.xcassets in Resources */,
 				1C59B8E62991565C00FBE342 /* LaunchScreen.storyboard in Resources */,
 				1C59B8E32991565C00FBE342 /* Assets.xcassets in Resources */,
 			);
