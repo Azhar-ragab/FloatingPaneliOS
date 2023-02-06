@@ -36,6 +36,9 @@
                         <color key="baseForegroundColor" name="purple"/>
                         <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="showPanel:" destination="-1" eventType="touchUpInside" id="PyA-MD-8wo"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="bqd-61-70f"/>

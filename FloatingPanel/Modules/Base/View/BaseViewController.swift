@@ -29,5 +29,9 @@ class BaseViewController: UIViewController {
         btnShowPanel.layer.cornerRadius = 0.5 * btnShowPanel.bounds.size.width
         btnShowPanel.clipsToBounds = true
     }
+    
+    @IBAction func showPanel(_ sender: Any) {
+       
+    }
 }
 

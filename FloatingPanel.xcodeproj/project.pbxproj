@@ -183,10 +183,18 @@
 		1C59B91B29916E7000FBE342 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				1C59B928299182FD00FBE342 /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		1C59B928299182FD00FBE342 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				1C59B8DD2991565B00FBE342 /* BaseViewController.swift */,
 				1C59B92429917C6F00FBE342 /* BaseViewController.xib */,
 			);
-			path = Base;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
