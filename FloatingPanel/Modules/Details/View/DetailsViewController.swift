@@ -13,9 +13,6 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var animatableView: UIView!
     @IBOutlet weak var tableView: UITableView!
     
-    let floatingPanelResultNotification = FloatingPanelResultNotification()
-
-    
     func getItemList() -> [ItemEntity] {
         var itemList: [ItemEntity] = []
         for i in 0...15 {
@@ -46,10 +43,7 @@ class DetailsViewController: UIViewController {
     }
     
     @IBAction func exit(_ sender: Any) {
-      
-        floatingPanelResultNotification.dismiss()
-
-       // dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
 }
 

@@ -35,10 +35,8 @@ class BaseViewController: UIViewController {
             height: UIScreen.main.bounds.height * 0.9,
             initialOffset: UIScreen.main.bounds.height / 2
         ))
-        vc.view.frame = self.view.bounds
-        self.addChild(vc)
-        self.view.addSubview(vc.view)
-        vc.didMove(toParent: self)
+        vc.modalPresentationStyle = .overCurrentContext
+        self.present(vc, animated: false)
     }
 }
 

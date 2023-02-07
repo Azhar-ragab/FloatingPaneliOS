@@ -13,7 +13,6 @@ open class BottomSheetContainerViewController<BottomSheet: UIViewController> : U
     var state: BottomSheetState = .collapsed
     
     let bottomSheetViewController: BottomSheet
-    var floatingPanelResultNotification = FloatingPanelResultNotification()
 
     private var topConstraint = NSLayoutConstraint()
     
@@ -32,8 +31,6 @@ open class BottomSheetContainerViewController<BottomSheet: UIViewController> : U
         
         super.init(nibName: nil, bundle: nil)
         self.setupUI()
-        floatingPanelResultNotification = FloatingPanelResultNotification(delegate: self)
-        floatingPanelResultNotification.subscribe()
     }
     
     required public init?(coder: NSCoder) {
@@ -149,12 +146,5 @@ open class BottomSheetContainerViewController<BottomSheet: UIViewController> : U
             }
         default: break
         }
-    }
-}
-
-extension BottomSheetContainerViewController: FloatingPanelResultNotificationDelegate {
-    
-    func dismiss() {
-        self.view.removeFromSuperview()
     }
 }

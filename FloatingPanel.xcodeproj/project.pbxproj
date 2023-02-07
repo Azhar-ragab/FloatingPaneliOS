@@ -31,7 +31,6 @@
 		1C7182CA2991C63400EB2E2A /* BottomSheetConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7182C92991C63400EB2E2A /* BottomSheetConfiguration.swift */; };
 		1C7182CC2991C65200EB2E2A /* BottomSheetState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7182CB2991C65200EB2E2A /* BottomSheetState.swift */; };
 		1C7182CF2991C8E100EB2E2A /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7182CE2991C8E100EB2E2A /* UIView+Extensions.swift */; };
-		1C7182D229924F8E00EB2E2A /* FloatingPanelResultNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7182D129924F8E00EB2E2A /* FloatingPanelResultNotification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +79,6 @@
 		1C7182C92991C63400EB2E2A /* BottomSheetConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetConfiguration.swift; sourceTree = "<group>"; };
 		1C7182CB2991C65200EB2E2A /* BottomSheetState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetState.swift; sourceTree = "<group>"; };
 		1C7182CE2991C8E100EB2E2A /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
-		1C7182D129924F8E00EB2E2A /* FloatingPanelResultNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPanelResultNotification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,7 +167,6 @@
 		1C59B91429916DC300FBE342 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				1C7182D029924F6300EB2E2A /* Notification */,
 				1C7182BE2991BD7A00EB2E2A /* BottomSheet */,
 				1C59B9442991964C00FBE342 /* Details */,
 				1C59B91B29916E7000FBE342 /* Base */,
@@ -351,14 +348,6 @@
 			path = UIVew;
 			sourceTree = "<group>";
 		};
-		1C7182D029924F6300EB2E2A /* Notification */ = {
-			isa = PBXGroup;
-			children = (
-				1C7182D129924F8E00EB2E2A /* FloatingPanelResultNotification.swift */,
-			);
-			path = Notification;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -503,7 +492,6 @@
 				1C7182BD2991B50500EB2E2A /* UILabelPadding.swift in Sources */,
 				1C59B9562991A46D00FBE342 /* UITableView+Extensions.swift in Sources */,
 				1C7182C02991BDC300EB2E2A /* BottomSheetContainerViewController.swift in Sources */,
-				1C7182D229924F8E00EB2E2A /* FloatingPanelResultNotification.swift in Sources */,
 				1C59B94C29919CD100FBE342 /* ItemCell.swift in Sources */,
 				1C59B9532991A33400FBE342 /* DetailsViewController+TableView.swift in Sources */,
 				1C7182CF2991C8E100EB2E2A /* UIView+Extensions.swift in Sources */,
