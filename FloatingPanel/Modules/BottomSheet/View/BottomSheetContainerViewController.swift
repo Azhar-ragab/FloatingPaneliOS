@@ -96,6 +96,27 @@ open class BottomSheetContainerViewController<BottomSheet: UIViewController> : U
         }
     }
     
+    func hideBottomSheet(animated: Bool = true) {
+        self.topConstraint.constant = 0
+        
+        if animated {
+            UIView.animate(withDuration: 0.5,
+                           delay: 0,
+                           usingSpringWithDamping: 0.8,
+                           initialSpringVelocity: 0.5,
+                           options: [.curveEaseInOut],
+                           animations: {
+                            self.view.layoutIfNeeded()
+            }, completion: { _ in
+                self.state = .hidden
+                self.dismiss(animated: true)
+            })
+        } else {
+            self.view.layoutIfNeeded()
+            self.state = .hidden
+        }
+    }
+    
     @objc func handlePan(_ sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: bottomSheetViewController.view)
         let velocity = sender.velocity(in: bottomSheetViewController.view)
@@ -134,7 +155,7 @@ open class BottomSheetContainerViewController<BottomSheet: UIViewController> : U
                 if yTranslationMagnitude >= configuration.height / 2 || velocity.y < -1000 {
                     self.expandBottomSheet()
                 } else {
-                    self.collapseBottomSheet()
+                    self.hideBottomSheet()
                 }
             }
         case .failed:

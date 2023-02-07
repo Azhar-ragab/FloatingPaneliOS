@@ -11,4 +11,5 @@ enum BottomSheetState {
   
     case collapsed
     case expanded
+    case hidden
 }
