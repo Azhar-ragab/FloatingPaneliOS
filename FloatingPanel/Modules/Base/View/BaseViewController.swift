@@ -31,7 +31,11 @@ class BaseViewController: UIViewController {
     }
     
     @IBAction func showPanel(_ sender: Any) {
-       
+        let vc = BottomSheetContainerViewController(bottomSheetViewController: DetailsViewController(), bottomSheetConfiguration: .init(
+            height: UIScreen.main.bounds.height * 0.9,
+            initialOffset: UIScreen.main.bounds.height / 2
+        ))
+        present(vc, animated: false)
     }
 }
 

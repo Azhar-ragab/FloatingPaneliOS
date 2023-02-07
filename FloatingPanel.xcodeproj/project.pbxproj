@@ -27,6 +27,10 @@
 		1C59B9532991A33400FBE342 /* DetailsViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C59B9522991A33400FBE342 /* DetailsViewController+TableView.swift */; };
 		1C59B9562991A46D00FBE342 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C59B9552991A46D00FBE342 /* UITableView+Extensions.swift */; };
 		1C7182BD2991B50500EB2E2A /* UILabelPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7182BC2991B50500EB2E2A /* UILabelPadding.swift */; };
+		1C7182C02991BDC300EB2E2A /* BottomSheetContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7182BF2991BDC300EB2E2A /* BottomSheetContainerViewController.swift */; };
+		1C7182CA2991C63400EB2E2A /* BottomSheetConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7182C92991C63400EB2E2A /* BottomSheetConfiguration.swift */; };
+		1C7182CC2991C65200EB2E2A /* BottomSheetState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7182CB2991C65200EB2E2A /* BottomSheetState.swift */; };
+		1C7182CF2991C8E100EB2E2A /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7182CE2991C8E100EB2E2A /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,10 @@
 		1C59B9522991A33400FBE342 /* DetailsViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailsViewController+TableView.swift"; sourceTree = "<group>"; };
 		1C59B9552991A46D00FBE342 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		1C7182BC2991B50500EB2E2A /* UILabelPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelPadding.swift; sourceTree = "<group>"; };
+		1C7182BF2991BDC300EB2E2A /* BottomSheetContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetContainerViewController.swift; sourceTree = "<group>"; };
+		1C7182C92991C63400EB2E2A /* BottomSheetConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetConfiguration.swift; sourceTree = "<group>"; };
+		1C7182CB2991C65200EB2E2A /* BottomSheetState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetState.swift; sourceTree = "<group>"; };
+		1C7182CE2991C8E100EB2E2A /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +167,7 @@
 		1C59B91429916DC300FBE342 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				1C7182BE2991BD7A00EB2E2A /* BottomSheet */,
 				1C59B9442991964C00FBE342 /* Details */,
 				1C59B91B29916E7000FBE342 /* Base */,
 			);
@@ -229,6 +238,7 @@
 		1C59B9402991954000FBE342 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				1C7182CD2991C8C500EB2E2A /* UIVew */,
 				1C59B9542991A45A00FBE342 /* UITableView */,
 				1C59B9412991954800FBE342 /* UIColor */,
 			);
@@ -302,6 +312,40 @@
 				1C7182BC2991B50500EB2E2A /* UILabelPadding.swift */,
 			);
 			path = UILabel;
+			sourceTree = "<group>";
+		};
+		1C7182BE2991BD7A00EB2E2A /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				1C7182C82991C62500EB2E2A /* Model */,
+				1C7182C72991C5D200EB2E2A /* View */,
+			);
+			path = BottomSheet;
+			sourceTree = "<group>";
+		};
+		1C7182C72991C5D200EB2E2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C7182BF2991BDC300EB2E2A /* BottomSheetContainerViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1C7182C82991C62500EB2E2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1C7182C92991C63400EB2E2A /* BottomSheetConfiguration.swift */,
+				1C7182CB2991C65200EB2E2A /* BottomSheetState.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1C7182CD2991C8C500EB2E2A /* UIVew */ = {
+			isa = PBXGroup;
+			children = (
+				1C7182CE2991C8E100EB2E2A /* UIView+Extensions.swift */,
+			);
+			path = UIVew;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -438,15 +482,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C7182CC2991C65200EB2E2A /* BottomSheetState.swift in Sources */,
 				1C59B91A29916E0100FBE342 /* RootRouter.swift in Sources */,
 				1C59B9432991955B00FBE342 /* UIColor+Extensions.swift in Sources */,
+				1C7182CA2991C63400EB2E2A /* BottomSheetConfiguration.swift in Sources */,
 				1C59B8DE2991565B00FBE342 /* BaseViewController.swift in Sources */,
 				1C59B947299196AA00FBE342 /* DetailsViewController.swift in Sources */,
 				1C59B9512991A2A500FBE342 /* ItemEntity.swift in Sources */,
 				1C7182BD2991B50500EB2E2A /* UILabelPadding.swift in Sources */,
 				1C59B9562991A46D00FBE342 /* UITableView+Extensions.swift in Sources */,
+				1C7182C02991BDC300EB2E2A /* BottomSheetContainerViewController.swift in Sources */,
 				1C59B94C29919CD100FBE342 /* ItemCell.swift in Sources */,
 				1C59B9532991A33400FBE342 /* DetailsViewController+TableView.swift in Sources */,
+				1C7182CF2991C8E100EB2E2A /* UIView+Extensions.swift in Sources */,
 				1C59B8DA2991565B00FBE342 /* AppDelegate.swift in Sources */,
 				1C59B8DC2991565B00FBE342 /* SceneDelegate.swift in Sources */,
 			);

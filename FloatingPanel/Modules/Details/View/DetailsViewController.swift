@@ -44,6 +44,7 @@ class DetailsViewController: UIViewController {
     }
     
     @IBAction func exit(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
 }
 
