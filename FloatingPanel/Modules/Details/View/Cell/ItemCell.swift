@@ -11,7 +11,7 @@ import UIKit
 class ItemCell: UITableViewCell {
 
     @IBOutlet weak var itemName: UILabel!
-    
+
     func configure(with item: ItemEntity) {
         itemName.text = item.name
         itemName.layer.borderWidth = 0.8

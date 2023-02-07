@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct BottomSheetConfiguration {
+struct BottomSheetConfiguration {
 
     let height: CGFloat
     let initialOffset: CGFloat
