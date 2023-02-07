@@ -61,7 +61,7 @@ open class BottomSheetContainerViewController<BottomSheet: UIViewController> : U
         bottomSheetViewController.didMove(toParent: self)
     }
     
-    func showBottomSheet(animated: Bool = true) {
+    func expandBottomSheet(animated: Bool = true) {
         self.topConstraint.constant = -configuration.height
         
         if animated {
@@ -76,7 +76,7 @@ open class BottomSheetContainerViewController<BottomSheet: UIViewController> : U
         }
     }
     
-    func hideBottomSheet(animated: Bool = true) {
+    func collapseBottomSheet(animated: Bool = true) {
         self.topConstraint.constant = -configuration.initialOffset
         
         if animated {
@@ -113,7 +113,7 @@ open class BottomSheetContainerViewController<BottomSheet: UIViewController> : U
                 let newConstant = -(configuration.initialOffset + yTranslationMagnitude)
                 guard translation.y < 0 else { return }
                 guard newConstant.magnitude < configuration.height else {
-                    self.showBottomSheet()
+                    self.expandBottomSheet()
                     return
                 }
                 topConstraint.constant = newConstant
@@ -123,26 +123,25 @@ open class BottomSheetContainerViewController<BottomSheet: UIViewController> : U
             if self.state == .expanded {
                 
                 if velocity.y < 0 {
-                    self.showBottomSheet()
+                    self.expandBottomSheet()
                 } else if yTranslationMagnitude >= configuration.height / 2 || velocity.y > 1000 {
-                    self.hideBottomSheet()
+                    self.collapseBottomSheet()
                 } else {
-                    self.showBottomSheet()
+                    self.expandBottomSheet()
                 }
             } else {
                 
                 if yTranslationMagnitude >= configuration.height / 2 || velocity.y < -1000 {
-                    self.showBottomSheet()
+                    self.expandBottomSheet()
                 } else {
-                    self.hideBottomSheet()
+                    self.collapseBottomSheet()
                 }
             }
         case .failed:
             if self.state == .expanded {
-                
-                self.showBottomSheet()
+                self.expandBottomSheet()
             } else {
-                self.hideBottomSheet()
+                self.collapseBottomSheet()
             }
         default: break
         }
