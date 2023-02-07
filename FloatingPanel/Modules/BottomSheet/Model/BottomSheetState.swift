@@ -9,6 +9,6 @@ import Foundation
 
 enum BottomSheetState {
   
-    case initial
-    case full
+    case collapsed
+    case expanded
 }

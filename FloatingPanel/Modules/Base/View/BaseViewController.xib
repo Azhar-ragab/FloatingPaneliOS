@@ -20,13 +20,13 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPV-0w-l6y">
-                    <rect key="frame" x="149.66666666666666" y="407.66666666666669" width="90.666666666666657" height="42"/>
+                    <rect key="frame" x="149.66666666666666" y="401" width="90.666666666666657" height="42"/>
                     <fontDescription key="fontDescription" type="system" pointSize="35"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eu2-7j-yU2">
-                    <rect key="frame" x="310" y="730" width="60" height="60"/>
+                    <rect key="frame" x="310" y="764" width="60" height="60"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="Eu2-7j-yU2" secondAttribute="height" multiplier="1:1" id="CAh-9t-RLG"/>
                         <constraint firstAttribute="width" constant="60" id="mF4-SR-f8R"/>
@@ -37,7 +37,7 @@
                         <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </buttonConfiguration>
                     <connections>
-                        <action selector="showPanel:" destination="-1" eventType="touchUpInside" id="PyA-MD-8wo"/>
+                        <action selector="showPanel:" destination="-1" eventType="touchUpInside" id="HJO-ix-n4Q"/>
                     </connections>
                 </button>
             </subviews>
